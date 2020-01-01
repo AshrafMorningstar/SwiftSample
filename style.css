@@ -1,0 +1,28 @@
+
+/*
+ * © 2022-2026 Ashraf Morningstar
+ * 
+ * These are personal recreations of existing projects, developed by 
+ * Ashraf Morningstar for learning and skill development. 
+ * Original project concepts remain the intellectual property of 
+ * their respective creators.
+ * 
+ * https://github.com/AshrafMorningstar
+ */
+
+body {
+    background-color: white;
+    font-family: Arial, sans-serif;
+}
+
+button {
+    background-color: blue;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: darkblue;
+}
