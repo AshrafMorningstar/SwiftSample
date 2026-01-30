@@ -1,1 +1,138 @@
-Error generating text.
+Here's the refactored code with a futuristic, premium aesthetic:
+
+```css
+:root {
+  --neon-cyan: #0ff0fc;
+  --neon-magenta: #ff00ff;
+  --neon-electric: #7b2dff;
+  --glass-dark: rgba(15, 15, 20, 0.65);
+  --glass-light: rgba(255, 255, 255, 0.12);
+  --deep-space: #050510;
+  --text-primary: #f0f0ff;
+  --text-glow: 0 0 10px currentColor;
+  --transition-all: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: radial-gradient(ellipse at center, var(--deep-space) 0%, #000000 100%);
+  color: var(--text-primary);
+  font-family: 'Rajdhani', 'Inter', sans-serif;
+  line-height: 1.6;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+/* Ultra-modern glass containers */
+.card, .container, section {
+  background: linear-gradient(135deg, var(--glass-light), var(--glass-dark));
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 24px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.36);
+  transition: var(--transition-all);
+  padding: 2rem;
+  margin: 1rem;
+}
+
+/* Holographic hover effects */
+.card:hover, .container:hover {
+  transform: translateY(-5px) scale(1.02);
+  box-shadow: 
+    0 0 15px var(--neon-cyan),
+    0 0 30px var(--neon-electric),
+    inset 0 0 10px rgba(255, 255, 255, 0.1);
+  border-color: rgba(255, 255, 255, 0.3);
+}
+
+/* Cyberpunk buttons */
+button, .btn {
+  background: transparent;
+  border: 2px solid var(--neon-cyan);
+  color: var(--neon-cyan);
+  padding: 1rem 2.5rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  transition: var(--transition-all);
+  border-radius: 50px;
+  text-shadow: var(--text-glow);
+  box-shadow: 
+    0 0 15px rgba(0, 243, 255, 0.3),
+    inset 0 0 10px rgba(0, 243, 255, 0.1);
+}
+
+button::before, .btn::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: linear-gradient(
+    to bottom right,
+    transparent 45%,
+    var(--neon-magenta) 50%,
+    transparent 55%
+  );
+  transform: rotate(30deg);
+  opacity: 0;
+  transition: var(--transition-all);
+}
+
+button:hover, .btn:hover {
+  background: rgba(0, 243, 255, 0.1);
+  color: white;
+  box-shadow: 
+    0 0 30px var(--neon-cyan),
+    0 0 60px var(--neon-electric);
+  transform: translateY(-3px);
+}
+
+button:hover::before, .btn:hover::before {
+  opacity: 0.6;
+  animation: scan 3s linear infinite;
+}
+
+/* Futuristic typography */
+h1, h2, h3 {
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-shadow: 
+    0 0 10px var(--neon-cyan),
+    0 0 20px var(--neon-electric);
+}
+
+@keyframes scan {
+  0% { transform: translateY(-100%) rotate(30deg); }
+  100% { transform: translateY(100%) rotate(30deg); }
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 0.8; }
+  50% { opacity: 1; }
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .card, .container {
+    padding: 1.5rem;
+    margin: 0.75rem;
+    backdrop-filter: blur(16px);
+  }
+  
+  button, .btn {
+    padding: 0.8rem 1.8rem;
+    font-size: 1rem;
+  }
+}
